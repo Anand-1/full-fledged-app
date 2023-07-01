@@ -10,6 +10,7 @@ const Footer = () => {
           Typescript
         </div>
         <div> Application is using Chakra UI</div>
+        <div>This is using axios for http request</div>
       </StyledFooter>
     </>
   );
