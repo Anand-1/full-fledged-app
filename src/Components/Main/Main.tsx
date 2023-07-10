@@ -1,15 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../Common/Footer/Footer";
 import Header from "../Common/Header/Header";
-import Users from "../Users/Users";
-import Admin from "../Admin/Admin";
 
 const Main = () => {
   return (
     <>
       <Header />
-      <Users />
-      <Admin />
+      <div className="center-aligned-element">
+        <p>
+          Go to <Link to="/users">users</Link>
+        </p>
+        <p>
+          Go to <Link to="/admin">Admin</Link>
+        </p>
+      </div>
       <Footer />
     </>
   );

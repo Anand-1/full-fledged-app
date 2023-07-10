@@ -5,6 +5,7 @@ const StyledHeader = styled.button`
   color: red;
   padding: 10px;
   width: 100vw;
+  display: flex;
 `;
 
 export default StyledHeader;
