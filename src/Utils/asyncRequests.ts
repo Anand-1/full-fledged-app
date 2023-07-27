@@ -7,7 +7,6 @@ const axiosClient = (
   postData = {},
   options = {}
 ) => {
-  console.log("Read");
   if (isPost) {
     return Axios({
       method: "POST",

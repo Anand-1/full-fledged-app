@@ -7,7 +7,7 @@ const Admin = () => {
   return (
     <>
       <Header />
-      <span>This is the Admin Component </span>
+      <h1>Admin Component </h1>
       <div className="center-aligned-element">
         <p>
           Go to <Link to="/admin/registration">Registration</Link>

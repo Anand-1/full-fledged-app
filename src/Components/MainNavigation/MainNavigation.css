@@ -1,0 +1,10 @@
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: aliceblue;
+}
+
+.main-items {
+  padding-left: 50px;
+}

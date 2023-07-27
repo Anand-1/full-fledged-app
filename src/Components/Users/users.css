@@ -1,0 +1,10 @@
+.user-data-view {
+  background-color: lightblue;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+}
+
+.product-page-view {
+  display: flex;
+  border: 1px solid black;
+}

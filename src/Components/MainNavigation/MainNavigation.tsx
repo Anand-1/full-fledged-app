@@ -1,23 +1,20 @@
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import "./MainNavigation.css";
 const MainNavigation = () => {
   return (
-    <ul>
-      <li>
-        <Link to="/users">Users</Link>
-      </li>
-      <li>
-        <Link to="/admin">Admin</Link>
-      </li>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-    </ul>
+    <>
+      <div className="main-navigation">
+        <div className="main-items">
+          <Link to="/users">Users</Link>
+        </div>
+        <div className="main-items">
+          <Link to="/admin">Admin</Link>
+        </div>
+        <div className="main-items">
+          <Link to="/">Home</Link>
+        </div>
+      </div>
+    </>
   );
 };
 

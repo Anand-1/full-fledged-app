@@ -1,8 +1,8 @@
 import styled from "styled-components";
 const StyledHeader = styled.button`
-  background-color: black;
+  background-color: grey;
   font-size: 32px;
-  color: red;
+  color: white;
   padding: 10px;
   width: 100vw;
   display: flex;
