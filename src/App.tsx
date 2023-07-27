@@ -8,6 +8,7 @@ import Registration from "./Components/Admin/Registration/Registration";
 import RegisteredUser from "./Components/Admin/RegisteredUsers/RegeisteredUsers";
 import ListPage from "./Components/Users/ListPage/ListPage";
 import ProductPage from "./Components/Users/Productpage/ProductPage";
+import LandingPage from "./Components/LandingPage/LandingPage";
 
 const router = createBrowserRouter([
   {
@@ -15,17 +16,16 @@ const router = createBrowserRouter([
     element: <Rootlayout />,
     children: [
       { path: "/admin", element: <Admin /> },
+      { path: "login", element: <Login /> },
+      { path: "registration", element: <Registration /> },
       { path: "/users", element: <Users /> },
+      { path: "/", element: <LandingPage /> },
     ],
   },
   {
     path: "/admin",
     element: <Rootlayout />,
-    children: [
-      { path: "login", element: <Login /> },
-      { path: "registration", element: <Registration /> },
-      { path: "users", element: <RegisteredUser /> },
-    ],
+    children: [{ path: "users", element: <RegisteredUser /> }],
   },
   {
     path: "/users",

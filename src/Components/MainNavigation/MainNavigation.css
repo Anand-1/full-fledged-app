@@ -1,10 +1,11 @@
 .main-navigation {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   background-color: black;
   color: aliceblue;
+  padding: 20px;
 }
 
 .main-items {
-  padding-left: 50px;
+  padding-right: 70px;
 }
