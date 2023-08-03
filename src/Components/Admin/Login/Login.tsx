@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+import PasswordGenerator from "../PasswordGenerator/PasswordGenerator";
 const Login = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -71,6 +72,9 @@ const Login = () => {
             </ButtonGroup>
           </CardFooter>
         </Card>
+      </div>
+      <div className="password-generator-section">
+        <PasswordGenerator />
       </div>
     </>
   );

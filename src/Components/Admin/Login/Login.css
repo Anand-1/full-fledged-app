@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.password-generator-section {
+  display: flex;
+  justify-content: center;
+}
 .add-margin-top {
   margin-top: 50px;
 }
