@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./PasswordGenerator.css";
+
 import Checkbox from "./CheckBox";
-import usePasswordGenerator from "./password-generator";
 import Button from "./Button";
+
+import usePasswordGenerator from "./password-generator";
+import PasswordStrengthIndicator from "./strengthchecker";
+
 const PasswordGenerator = () => {
   const [length, setLength] = useState(Number);
   const [checkboxData, setCheckboxData] = useState([
@@ -34,28 +38,28 @@ const PasswordGenerator = () => {
       <div className="generator-section">
         <div className="password-box">Password Generator</div>
         <div className="header">
-          <div className="password">{password}</div>
-          <div className="copybtn">
+          <div className="password">{password ? password : "- - - - - "}</div>
+          <div className="button-box">
             <Button
               text={copied ? "Copied" : "copy"}
               onClick={handleCopy}
-              customClass="copyBtn"
+              customClass="button-box"
             />
           </div>
         </div>
         <div className="header">
           <div>Character Length</div>
           <div>
-            <label>{length}</label>
+            <label>{length ? length : 4}</label>
           </div>
         </div>
         <div>
           <input
             type="range"
             className="input-range"
-            min="4"
+            min="0"
             max="20"
-            value={length}
+            value={length ? length : 4}
             onChange={(e) => setLength(Number(e.target.value))}
           />
         </div>
@@ -71,6 +75,10 @@ const PasswordGenerator = () => {
             );
           })}
         </div>
+        <PasswordStrengthIndicator
+          errorMessage={errorMessage}
+          password={password}
+        />
         <Button
           className="button-box"
           text="Generate Password"

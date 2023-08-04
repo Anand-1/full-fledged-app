@@ -5,8 +5,6 @@ const usePasswordGenerator = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const generatePassword = (checkboxData: any, length: number) => {
-    console.log(checkboxData);
-    console.log(length);
     let charset = "",
       generatedPassword = "";
 
