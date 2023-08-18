@@ -4,7 +4,7 @@ const StyledHeader = styled.button`
   font-size: 32px;
   color: white;
   padding: 10px;
-  width: 100vw;
+  width: 100%;
   display: flex;
 `;
 

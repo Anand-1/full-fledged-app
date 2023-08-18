@@ -9,7 +9,6 @@ const Footer = () => {
           This Application Will be using StoryBook , Style-components ,
           Typescript
         </div>
-        <div> Application is using Chakra UI</div>
         <div>This is using axios for http request</div>
       </StyledFooter>
     </>

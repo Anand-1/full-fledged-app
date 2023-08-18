@@ -3,8 +3,6 @@ import React from "react";
 const PasswordStrengthIndicator = ({ errorMessage, password }: any) => {
   const getPasswordStrength = () => {
     const passwordLength = password.length;
-    console.log(passwordLength);
-
     if (passwordLength < 1) {
       return "";
     } else if (passwordLength < 4) {
@@ -21,8 +19,6 @@ const PasswordStrengthIndicator = ({ errorMessage, password }: any) => {
   };
 
   const passwordStrength = getPasswordStrength();
-  console.log(passwordStrength);
-
   // if (!passwordStrength) return <React.Fragment />;
   if (!passwordStrength)
     return (

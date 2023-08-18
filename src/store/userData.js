@@ -2,14 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialInfoState = {
   step: 1,
-  firstname: "",
-  lastname: "",
-  email: "",
-  phone: "",
+  firstname: "Anand",
+  lastname: "Raj",
+  email: "anandrajj10@gmail.com",
+  phone: "8929178338",
   isCitizen: true,
-  gitProfile: "",
-  CvValue: "",
-  CoverValue: "",
+  gitProfile: "Yes",
+  CvValue: "Yes",
+  CoverValue: "Yes",
 };
 // reducers for user input
 const userDataSlice = createSlice({
