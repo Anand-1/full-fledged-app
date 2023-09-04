@@ -16,22 +16,31 @@ const Login = () => {
   return (
     <>
       <div className="main-content">
-        <h1>Welcome to Login Page </h1>
-
-        <h1>User Name :</h1>
-        <input
-          placeholder="Enter user name !"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-
-        <h1>Password :</h1>
-        <input
-          placeholder=" Enter password here !"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button onClick={() => loginAction()}>Login</button>
+        <div className="login-section">
+          <div>
+            <h3>Welcome to Login Page </h3>
+          </div>
+          <hr />
+          <div className="username_section">
+            <label>User Name :</label>
+            <input
+              placeholder="Enter user name !"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="password_section">
+            <label>Password :</label>
+            <input
+              placeholder=" Enter password here !"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div>
+            <button onClick={() => loginAction()}>Login</button>
+          </div>
+        </div>
       </div>
       <div className="password-generator-section">
         <PasswordGenerator />

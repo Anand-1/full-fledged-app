@@ -1,6 +1,13 @@
 .main-content {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+.login-section {
+  border: 1px solid gray;
+  box-shadow: 5px 5px #888888;
+  padding: 20px;
 }
 
 .password-generator-section {
@@ -9,4 +16,9 @@
 }
 .add-margin-top {
   margin-top: 50px;
+}
+
+.password_section,
+.username_section {
+  margin-bottom: 5px;
 }
