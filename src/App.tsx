@@ -10,7 +10,7 @@ import ListPage from "./Components/Users/ListPage/ListPage";
 import ProductPage from "./Components/Users/Productpage/ProductPage";
 import LandingPage from "./Components/LandingPage/LandingPage";
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
   {
     path: "/",
     element: <Rootlayout />,
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <RouterProvider router={routes} />
     </>
   );
 }
