@@ -95,7 +95,7 @@ const InfoDetails = () => {
           </button>
           <button
             className="buttons__button buttons__button--next"
-            onClick={() => continueHandler(Event)}
+            onClick={continueHandler}
           >
             Next
           </button>

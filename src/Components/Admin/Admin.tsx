@@ -3,10 +3,12 @@ import "./Admin.css";
 import { Link } from "react-router-dom";
 import Header from "../Common/Header/Header";
 import Footer from "../Common/Footer/Footer";
+import MainNavigation from "../MainNavigation/MainNavigation";
 
 const Admin = () => {
   return (
     <>
+      <MainNavigation />
       <Header />
       <div className="center-aligned-element">
         <h1>Admin Component </h1>

@@ -1,31 +1,31 @@
-import Axios from "axios";
+import { Axios } from "axios";
 
-const axiosClient = (
-  url = "",
-  timeout = 0,
-  isPost = false,
-  postData = {},
-  options = {}
-) => {
-  if (isPost) {
-    return Axios({
-      method: "POST",
-      url,
-      data: postData,
-      ...options,
-    });
-  }
-  if (timeout) {
-    return Axios({
-      method: "GET",
-      url,
-      timeout,
-    });
-  }
-  return Axios({
-    method: "GET",
-    url,
-  });
-};
+// const axiosClient = (
+//   url = "",
+//   timeout = 0,
+//   isPost = false,
+//   postData = {},
+//   options = {}
+// ) => {
+//   if (isPost) {
+//     return new Axios({
+//       method: "POST",
+//       url,
+//       data: postData,
+//       ...options,
+//     });
+//   }
+//   if (timeout) {
+//     return new Axios({
+//       method: "GET",
+//       url,
+//       timeout,
+//     });
+//   }
+//   return new Axios({
+//     method: "GET",
+//     url,
+//   });
+// };
 
-export default axiosClient;
+// export default axiosClient;

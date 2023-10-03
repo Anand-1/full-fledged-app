@@ -5,6 +5,7 @@ import Header from "../Common/Header/Header";
 import Footer from "../Common/Footer/Footer";
 import ProductPage from "./Productpage/ProductPage";
 import "./users.css";
+import MainNavigation from "../MainNavigation/MainNavigation";
 
 const Users = () => {
   const expenseDate = new Date(2012, 2, 28);
@@ -17,13 +18,14 @@ const Users = () => {
   const UserData = async () => {
     try {
       let response = await fetchUserdata();
-      setUserDate(response.data.message);
+      // setUserDate(response.data.message);
     } catch (error) {
       console.log(error);
     }
   };
   return (
     <>
+      <MainNavigation />
       <Header />
       <div className="user-data-view">
         <span>This is the user View</span>

@@ -3,8 +3,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { stepperActions } from "../../../../store/stepper";
 import { Stepper } from "react-form-stepper";
 import "../Registration.css";
+import { useNavigate } from "react-router-dom";
 //component for CV upload
 const UploadCv = () => {
+  const navigate = useNavigate();
   const [CvFile, setCvValue] = useState(Object);
   const [CoverFile, setCoverValue] = useState(Object);
   const dispatch = useDispatch();
@@ -47,6 +49,7 @@ const UploadCv = () => {
 
   async function sendDataHandler(e: any) {
     e.preventDefault();
+    console.log(loadeddata);
     try {
       const response = await fetch("http://localhost:8080/post", {
         method: "POST",
@@ -62,6 +65,7 @@ const UploadCv = () => {
       console.log(data);
     } catch (error) {
       console.log(error);
+      navigate("/admin/users");
     }
   }
 

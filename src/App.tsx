@@ -5,7 +5,7 @@ import Users from "./Components/Users/Users";
 import Rootlayout from "./layouts/Root";
 import Login from "./Components/Admin/Login/Login";
 import Registration from "./Components/Admin/Registration/Registration";
-import RegisteredUser from "./Components/Admin/RegisteredUsers/RegeisteredUsers";
+import RegisteredUser from "./Components/Admin/RegisteredUsers/RegisteredUsers";
 import ListPage from "./Components/Users/ListPage/ListPage";
 import ProductPage from "./Components/Users/Productpage/ProductPage";
 import LandingPage from "./Components/LandingPage/LandingPage";

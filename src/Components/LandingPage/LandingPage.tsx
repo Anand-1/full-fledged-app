@@ -3,12 +3,14 @@ import Footer from "../Common/Footer/Footer";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
 import useWindowResize from "./useWindowSize";
+import MainNavigation from "../MainNavigation/MainNavigation";
 
 const LandingPage = () => {
   const navigate = useNavigate();
   const { width, height } = useWindowResize();
   return (
     <>
+      <MainNavigation />
       <div className="window-size">
         <span>
           {width} * {height}

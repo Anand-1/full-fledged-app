@@ -6,7 +6,6 @@ import UploadCv from "./UploadCv";
 
 const Form = () => {
   const stepValue = useSelector((state: any) => state.stepper.step);
-  console.log(stepValue);
   switch (stepValue) {
     case 1:
       return <PersonalDetails />;
