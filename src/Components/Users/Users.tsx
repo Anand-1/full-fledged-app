@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { fetchUserdata } from "../../Api/userData";
+// import { fetchUserdata } from "../../Api/userData";
 import Header from "../Common/Header/Header";
 import Footer from "../Common/Footer/Footer";
 import ProductPage from "./Productpage/ProductPage";

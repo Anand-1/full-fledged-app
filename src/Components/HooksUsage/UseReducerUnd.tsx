@@ -102,7 +102,7 @@ const UseReducerUnd = () => {
 
       <div className="box">
         <h2>Use Reducer Example Component</h2>
-        Learn {""} {todosInternal.filter((data: any) => data.react == true)}
+        Learn {""} {todosInternal.filter((data: any) => data.react === true)}
         <div>
           <button
             type="button"
