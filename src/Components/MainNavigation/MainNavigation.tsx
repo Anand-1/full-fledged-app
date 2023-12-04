@@ -13,6 +13,9 @@ const MainNavigation = () => {
         <div className="main-items">
           <Link to="/">Home</Link>
         </div>
+        <div className="main-items">
+          <Link to="/hooks/grandparent">Hooks Usage</Link>
+        </div>
       </div>
     </>
   );

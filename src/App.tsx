@@ -9,6 +9,9 @@ import RegisteredUser from "./Components/Admin/RegisteredUsers/RegisteredUsers";
 import ListPage from "./Components/Users/ListPage/ListPage";
 import ProductPage from "./Components/Users/Productpage/ProductPage";
 import LandingPage from "./Components/LandingPage/LandingPage";
+import GrandParent from "./Components/HooksUsage/GrandParent";
+import Parent from "./Components/HooksUsage/Parent";
+import Child from "./Components/HooksUsage/Child";
 
 const routes = createBrowserRouter([
   {
@@ -36,6 +39,16 @@ const routes = createBrowserRouter([
     children: [
       { path: "productlist", element: <ProductPage /> },
       { path: "users", element: <ListPage /> },
+    ],
+  },
+  {
+    path: "/hooks",
+    element: <Rootlayout />,
+    children: [
+      { path: "grandparent", element: <GrandParent /> },
+      { path: "parent", element: <Parent /> },
+      { path: "child", element: <Child /> },
+      { path: "*", element: <GrandParent /> },
     ],
   },
 ]);
