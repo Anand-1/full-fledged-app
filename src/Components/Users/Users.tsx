@@ -11,14 +11,14 @@ const Users = () => {
   const expenseDate = new Date(2012, 2, 28);
   const expenseTitle = "Car insurane";
   const expenseAmount = 234;
-  const [userData, setUserDate] = useState();
+  // const [userData, setUserDate] = useState();
   useEffect(() => {
     UserData();
   }, []);
   const UserData = async () => {
     try {
-      let response = await fetchUserdata();
-      // setUserDate(response.data.message);
+      // let response = await fetchUserdata();
+      // setUserDate(response);
     } catch (error) {
       console.log(error);
     }
@@ -30,7 +30,7 @@ const Users = () => {
       <div className="user-data-view">
         <span>This is the user View</span>
         <br></br>
-        <span>{userData}</span>
+        {/* <span>{userData}</span> */}
         <br />
         <span>The date is {expenseDate.toISOString()}</span>
         <br />
@@ -40,7 +40,7 @@ const Users = () => {
         <div className="product-page-view">
           <div>
             <ProductPage
-              userData={userData}
+              // userData={userData}
               expenseAmount={expenseAmount}
               expenseDate={expenseDate}
               expenseTitle={expenseTitle}

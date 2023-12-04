@@ -48,6 +48,7 @@ const GrandParent = () => {
   useEffect(() => {
     setTimeout(() => {
       setCounter((count) => count + 1);
+      setTodos(["fh"]);
     }, 1000);
   }, []);
 
