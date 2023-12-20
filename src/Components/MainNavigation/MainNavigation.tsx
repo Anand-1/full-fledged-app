@@ -5,16 +5,19 @@ const MainNavigation = () => {
     <>
       <div className="main-navigation">
         <div className="main-items">
-          <Link to="/users">Users</Link>
+          <Link className="link-items" to="/users">
+            Users
+          </Link>
         </div>
         <div className="main-items">
-          <Link to="/admin">Admin</Link>
+          <Link to="/admin" className="link-items">
+            Admin
+          </Link>
         </div>
         <div className="main-items">
-          <Link to="/">Home</Link>
-        </div>
-        <div className="main-items">
-          <Link to="/hooks/grandparent">Hooks Usage</Link>
+          <Link className="link-items" to="/">
+            Home
+          </Link>
         </div>
       </div>
     </>

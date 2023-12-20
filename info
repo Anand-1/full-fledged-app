@@ -1,0 +1,93 @@
+= This project is supposed to have these features
+
+1. Landiing Page
+   - Option to Login
+   - Option to Register & registration process
+2. On Login redirect to users page
+3. Login page have passowrd gerator
+
+---
+
+Technical Specifications
+
+- React , Redux , Typescript
+
+---
+
+Future Scope of work:
+
+1. Code splitting using 'lazy' and 'suspense'
+2. Tree shaking : Using module bundler like webpack to eliminate unused code duiring build process
+3. Minification of HTML,CSS, Javascript to reduce unnnecessary whitespace and reduce file size
+4. Enable Gzip or brotli on wen server to reduce file size during the transmission
+5. Image compression and use WebP , lazy load image on scroeen
+6. Enable service worker to enable client side caching and reduce load time on subsequent visits. Cache HCJ to serve them offline
+7. code bundling and spplitt8ing
+8. Use CSS-in-JS libraries
+9. Server side rendering
+10. Memoization using React.memo
+11. Implement virtualized lists like react-virtualized or react-window
+12. API Cacheing
+13. Lazy loading and asynchronous data loadin
+14. Optimize Images and videos : Use responsive images with the <picture> element or the `scrset` attribute and lazy load image
+15. Monitoring usnig Lighthouse , Web Vitals and chrome Devtools Performance latb
+
+---
+
+Future Supposed Folder Structure
+src/
+|-- assets/
+| |-- images/
+| |-- fonts/
+|
+|-- components/
+| |-- common/
+| | |-- Header.js
+| | |-- Footer.js
+| |
+| |-- feature1/
+| | |-- Feature1Component1.js
+| | |-- Feature1Component2.js
+| |
+| |-- feature2/
+| | |-- Feature2Component1.js
+| | |-- Feature2Component2.js
+| |
+| |-- index.js
+|
+|-- containers/
+| |-- Feature1Container.js
+| |-- Feature2Container.js
+|
+|-- contexts/
+| |-- AppContext.js
+|
+|-- hooks/
+| |-- useAuth.js
+| |-- useApi.js
+|
+|-- routes/
+| |-- AppRouter.js
+| |-- PrivateRoute.js
+|
+|-- services/
+| |-- api.js
+| |-- authService.js
+|
+|-- styles/
+| |-- main.scss
+|
+|-- utils/
+| |-- helpers.js
+|
+|-- views/
+| |-- Home.js
+| |-- About.js
+|
+|-- App.js
+|-- index.js
+|-- config.js
+|-- setupTests.js
+|-- reportWebVitals.js
+|-- serviceWorker.js
+|-- translations.js

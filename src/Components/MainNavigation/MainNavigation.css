@@ -2,10 +2,18 @@
   display: flex;
   flex-direction: row-reverse;
   background-color: black;
-  color: wheat !important;
+  color: rgb(230, 225, 216) !important;
   padding: 20px;
 }
 
+.link-items {
+  color: aliceblue;
+  outline: none;
+}
+
+.link-items:active {
+  color: aqua;
+}
 .main-items {
   padding-right: 70px;
 }
